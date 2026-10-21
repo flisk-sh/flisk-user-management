@@ -2,7 +2,7 @@
 # Enterprise User Directory, SSO, RBAC & Audit Governance
 
 # Load TDK extension
-v1alpha1.extension_repo(name='tdk-cli', url='https://github.com/tdk-landscape/tdk-cli')
+v1alpha1.extension_repo(name='tdk-cli', url='https://github.com/flisk-sh/tdk-cli')
 v1alpha1.extension(name='tdk-cli', repo_name='tdk-cli', repo_path='')
 
 # Load TDK utilities
