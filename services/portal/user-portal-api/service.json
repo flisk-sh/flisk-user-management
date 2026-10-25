@@ -1,12 +1,10 @@
 {
-    "appName": "user-portal-api",
-    "appType": "backend",
-    "stack": "portal",
-    "port": 4020,
-    "dependsOn": [],
-    "healthCheck": {
-        "enabled": true,
-        "path": "/health"
-    },
-    "featuresEnabled": []
+  "appName": "user-portal-api",
+  "appType": "backend",
+  "stack": "portal",
+  "port": 4020,
+  "dependsOn": [],
+  "featuresEnabled": [],
+  "healthCheckPath": "/health",
+  "schemaVersion": 1
 }

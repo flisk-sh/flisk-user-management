@@ -1,18 +1,16 @@
 {
-    "appName": "user-admin-app",
-    "appType": "frontend",
-    "stack": "admin",
-    "port": 3010,
-    "dependsOn": [
-        "user-admin-api"
-    ],
-    "healthCheck": {
-        "enabled": true,
-        "path": "/health"
-    },
-    "featuresEnabled": [
-        "api-client",
-        "env-config",
-        "api-index"
-    ]
+  "appName": "user-admin-app",
+  "appType": "frontend",
+  "stack": "admin",
+  "port": 3010,
+  "dependsOn": [
+    "user-admin-api"
+  ],
+  "featuresEnabled": [
+    "api-client",
+    "env-config",
+    "api-index"
+  ],
+  "healthCheckPath": "/health",
+  "schemaVersion": 1
 }
