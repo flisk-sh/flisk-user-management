@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "project": {
-    "name": "tdk-user-management",
+    "name": "flisk-user-management",
     "version": "1.0.0"
   },
   "phases": {

@@ -1,4 +1,4 @@
-console.log('[TDK Compliance Worker] Listening for identity stream events and SIEM webhooks...');
+console.log('[Flisk Compliance Worker] Listening for identity stream events and SIEM webhooks...');
 
 export function processAuditStream(event: Record<string, unknown>) {
     console.log('[Audit Event Ingested]:', event);

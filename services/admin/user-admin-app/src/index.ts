@@ -1,2 +1,2 @@
-console.log('[TDK User Admin Console] Initializing Admin UI on port 3010...');
-export const App = () => 'TDK User Management Admin Console';
+console.log('[Flisk User Admin Console] Initializing Admin UI on port 3010...');
+export const App = () => 'Flisk User Management Admin Console';

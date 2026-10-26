@@ -26,7 +26,7 @@ Enterprise software delivery is bottlenecked by monolithic identity configuratio
 ## 2. Core Value Pillars
 
 ### Pillar I: Declarative PSR Model
-- **Project:** `tdk-user-management` — the full enterprise security landscape.
+- **Project:** `flisk-user-management` — the full enterprise security landscape.
 - **Stacks:** `admin`, `portal`, `compliance` — modular business domains that can be spun up individually or collectively.
 - **Resources:** 6 micro-units (Admin API/App, Portal API/App, Audit API/Worker) that declare dependencies, ports, and health behavior cleanly.
 

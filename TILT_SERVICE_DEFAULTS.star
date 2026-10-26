@@ -25,7 +25,7 @@ DOCKER_BASE_IMAGES = {
     "nginx": "nginx:alpine",
 }
 
-NETWORK_PREFIX = "tdk-um"
+NETWORK_PREFIX = "flisk-um"
 
 exports = {
     "BASE_PORT_FRONTEND": BASE_PORT_FRONTEND,

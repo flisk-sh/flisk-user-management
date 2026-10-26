@@ -150,7 +150,7 @@ Running `flisk up` turns that manifest into the exact plumbing required by Tilt,
 
 | Level | Meaning in Flisk User Management | Command Surface |
 | --- | --- | --- |
-| **Project** | The entire enterprise security landscape (`tdk-user-management`) | `flisk up`, `flisk down`, `flisk status` |
+| **Project** | The entire enterprise security landscape (`flisk-user-management`) | `flisk up`, `flisk down`, `flisk status` |
 | **Stack** | Independent business domain (`admin`, `portal`, `compliance`) | `flisk up admin`, `flisk up portal` |
 | **Resource** | Micro-runnable API, web console, or worker process | `flisk resource <name> ...` |
 
