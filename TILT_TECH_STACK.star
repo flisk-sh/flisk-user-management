@@ -1,5 +1,5 @@
 # =============================================================================
-# TILT_TECH_STACK.star - TDK User Management Tech Stack Configuration
+# TILT_TECH_STACK.star - Flisk User Management Tech Stack Configuration
 # =============================================================================
 
 RUNTIME = "bun"
@@ -33,7 +33,7 @@ def assert_tech_stack(loaded_stack):
                 key, expected, actual
             ))
     
-    print("✅ Tech stack validated for TDK User Management: {} / {} / {}".format(
+    print("✅ Tech stack validated for Flisk User Management: {} / {} / {}".format(
         WEB_FRAMEWORK, RUNTIME, TESTING
     ))
 

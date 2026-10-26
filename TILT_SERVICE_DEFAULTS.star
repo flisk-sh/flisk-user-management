@@ -1,5 +1,5 @@
 # =============================================================================
-# TILT_SERVICE_DEFAULTS.star - TDK User Management Platform Defaults
+# TILT_SERVICE_DEFAULTS.star - Flisk User Management Platform Defaults
 # =============================================================================
 
 BASE_PORT_FRONTEND = 3010
