@@ -20,3 +20,8 @@ build/
 .env
 .env.local
 .DS_Store
+
+# Flisk (generated files and secrets)
+.flisk/.flisk-out/
+.flisk/.project-id
+.flisk/smoke/
