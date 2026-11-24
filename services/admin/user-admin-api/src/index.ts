@@ -2,15 +2,17 @@ import { Hono } from 'hono';
 
 const app = new Hono();
 
+const users = [
+    { id: 'usr_01', name: 'Alex Rivera', email: 'alex.rivera@enterprise.com', role: 'SecurityAdmin', org: 'Engineering', status: 'ACTIVE' },
+    { id: 'usr_02', name: 'Devon Chen', email: 'devon.chen@enterprise.com', role: 'ComplianceAuditor', org: 'Legal', status: 'ACTIVE' }
+];
+
 app.get('/health', (c) => c.json({ status: 'ok', service: 'user-admin-api', timestamp: new Date().toISOString() }));
 
 app.get('/api/v1/users', (c) => {
     return c.json({
-        data: [
-            { id: 'usr_01', name: 'Alex Rivera', email: 'alex.rivera@enterprise.com', role: 'SecurityAdmin', org: 'Engineering', status: 'ACTIVE' },
-            { id: 'usr_02', name: 'Devon Chen', email: 'devon.chen@enterprise.com', role: 'ComplianceAuditor', org: 'Legal', status: 'ACTIVE' }
-        ],
-        total: 2,
+        data: users,
+        total: users.length,
         page: 1,
         limit: 20
     });
@@ -19,17 +21,15 @@ app.get('/api/v1/users', (c) => {
 app.get('/api/v1/scim/v2/Users', (c) => {
     return c.json({
         schemas: ['urn:ietf:params:scim:api:messages:2.0:ListResponse'],
-        totalResults: 2,
-        itemsPerPage: 20,
+        totalResults: users.length,
+        itemsPerPage: users.length,
         startIndex: 1,
-        Resources: [
-            {
-                schemas: ['urn:ietf:params:scim:schemas:core:2.0:User'],
-                id: 'usr_01',
-                userName: 'alex.rivera@enterprise.com',
-                active: true
-            }
-        ]
+        Resources: users.map((user) => ({
+            schemas: ['urn:ietf:params:scim:schemas:core:2.0:User'],
+            id: user.id,
+            userName: user.email,
+            active: user.status === 'ACTIVE'
+        }))
     });
 });
 
